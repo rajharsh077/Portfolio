@@ -50,7 +50,7 @@ const Footer = () => {
       <hr className='m-14 opacity-15 w-11/12' />
       <div className='flex justify-between ml-20'>
         <div className='flex flex-col'>
-        <img src='../public/images/ak.png' className='h-[70%]  rounded-full'></img><br />
+        <img src='/images/ak.png' className='h-[70%]  rounded-full'></img><br />
         <h2 className='text-orange-500 text-2xl font-semibold'>Harsh</h2>
         <h2 className='text-2xl text-white'>Web Developer</h2>
         </div>

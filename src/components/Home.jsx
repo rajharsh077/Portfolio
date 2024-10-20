@@ -81,7 +81,7 @@ const Home = () => {
         <p className='text-2xl mt-12 leading-9'>Hi there! I’m a passionate and aspiring front-end developer with a love for crafting seamless user experiences. With experience in building projects with responsive and interactive web applications, I specialize in C, C++, HTML, CSS, JavaScript,GSAP,Tailwind, React JS , etc.</p>
        </div>
        <div id='img'ref={ref} className='w-[40%]'>
-        <img src='../public/images/a4.png'className='bg-cover rounded-2xl '></img>
+        <img src='/images/a4.png'className='bg-cover rounded-2xl '></img>
        </div>
     </div>
     </div>
@@ -90,7 +90,7 @@ const Home = () => {
       <div>
       <h3 ref={ref5} className='opacity-70 text-5xl'>About Me</h3>
       <div className='flex mt-28 gap-32'>
-        <img ref={ref1} src='../public/images/ak.png' className='rounded-2xl '></img>
+        <img ref={ref1} src='/images/ak.png' className='rounded-2xl '></img>
         <div className='info'>
           <h3 ref={ref2} className='text-5xl leading-tight'>Hi I’m Harsh and I am passionate about everything that has to do with Web Development and Web Design. I enjoy working in web projects and with enthusiastic people who is eager in Website Development through beautiful designs and experiences.</h3>
           <button onClick={about} ref={ref4} className='mt-4 p-4 border-2 bg-amber-700 text-white rounded-full font-semibold'>Know More</button> 
