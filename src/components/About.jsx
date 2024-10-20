@@ -17,7 +17,7 @@ const About = () => {
     <>
     <div className='sm:w-screen'ref={ref}>
     <div className='w-11/12 mt-16 ml-20 flex gap-12 '>
-     <img className=' ' src='https://framerusercontent.com/images/muH2zRcsvbqdSmGRcSstWRXuYo.png'></img>
+     <img className='h-[780px] w-[30%] object-cover bg-cover' src='../public/images/mec2.jpg'></img>
      <div>
       <h2 className='font-bold text-5xl'>Hi,</h2>
       <p className='text-xl mt-5 leading-9'>Hello! I’m Harsh Raj, from a very religious state Bihar. After Completion of my 12th from Patna where I used to live , I decided to choose engineering as my profession. So I came to Chitkara University,located in the vibrant state of Punjab in 2023 to fulfill my dreams and explore and learn about the Tech World. From the 1st year in my college I had a keen interest in Web development.Currently,I am in my second-year as a B.Tech student specializing in Computer Science. My journey in technology began with a keen interest in how the web shapes our world, and I’m eager to dive deeper into the realm of web development.<br/><br/>
