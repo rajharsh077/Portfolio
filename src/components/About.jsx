@@ -7,7 +7,7 @@ const About = () => {
   useGSAP(()=>{
     gsap.registerPlugin(ScrollTrigger);
     gsap.from(ref.current,{
-      opacity:0,
+      // opacity:0,
       duration:0.5,
       y:30
       // x:-20
