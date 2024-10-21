@@ -1,9 +1,44 @@
-import React from 'react'
-
+import React, { useRef } from 'react'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const Works = () => {
+  const ref=useRef()
+  const ref1=useRef()
+  const ref2=useRef()
+  useGSAP(()=>{
+    gsap.from(ref.current,{
+      // opacity:0,
+      scale:0.7,
+      stagger:true,
+      // y:70,
+      scrollTrigger:{
+        trigger: ref.current,
+        start:"top 100%"
+      }
+    })
+    gsap.from(ref1.current,{
+      // opacity:0,
+      scale:0.7,
+      // y:70,
+      scrollTrigger:{
+        trigger: ref.current,
+        start:"top 100%"
+      }
+    })
+    gsap.from(ref2.current,{
+      // opacity:0,
+      scale:0.7,
+      // y:70,
+      scrollTrigger:{
+        trigger: ref.current,
+        start:"top 100%"
+      }
+    })
+  },[])
   return (
     <>
-    <div className='w-11/12 pl-60 pt-12 flex flex-col h-[80vh]'>
+    <div className='w-11/12 pl-48 pt-20 flex flex-col h-[80vh]'>
     <div className='flex gap-64'>
     <h1 className='text-4xl underline'>Works</h1>
       <div className='flex flex-col'>
@@ -26,6 +61,26 @@ const Works = () => {
       
       </div>
       
+    </div>
+    </div>
+    <div className='w-11/12 pl-40 flex flex-col mr-24'>
+    <h1 className='text-4xl font-semibold underline'>Projects</h1>
+    <div className='flex gap-20 mt-16 pb-36'>
+      <div>
+        <div ref={ref} className='h-72 w-96 bg-blue-700 overflow-hidden relative'><p className='absolute bottom-0 text-2xl text-white font-bold'>Netflix</p>
+          <img className='bg-cover z-40 w-full h-full' src='/images/Netflix.png'></img>
+        </div>
+      </div>
+      <div>
+      <div ref={ref1} className='h-72 w-96 bg-blue-700 overflow-hidden relative'><p className='absolute bottom-0 text-2xl font-semibold text-black'>Amazon</p>
+          <img  className='bg-cover z-40 w-full h-full' src='/images/amazon.png'></img>
+        </div>
+      </div>
+      <div>
+      <div ref={ref2} className='h-72 w-96 bg-blue-700 overflow-hidden relative'><p className='absolute bottom-0 text-2xl text-white'>GSAP Project</p>
+          <img className='bg-cover z-40 w-full h-full' src='/images/pro.png'></img>
+        </div>
+      </div>
     </div>
     
     </div>
